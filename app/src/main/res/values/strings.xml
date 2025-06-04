@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Coffee_Shop_App</string>
+    <string name="choice_your_nfavourite_coffee">Choice your\nFavourite Coffee</string>
+    <string name="get_started">Get Started</string>
+</resources>
