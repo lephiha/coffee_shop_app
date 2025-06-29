@@ -1,5 +1,6 @@
 package com.lephiha.coffee_shop_app.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.GridLayout
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         initBanner()
         initcategory()
         initpopular()
+        initBottomMenu()
     }
 
     private fun initBanner() {
@@ -66,4 +68,12 @@ class MainActivity : AppCompatActivity() {
         }
         viewModel.loadPopular()
     }
+
+    private fun initBottomMenu() {
+        binding.cartBtn.setOnClickListener{
+            startActivity(Intent(this, CartActivity::class.java))
+        }
+    }
+
+
 }
